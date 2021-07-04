@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - Demo Flexbox 3</title>
+        <style>
+            body { padding: 2em; }
+
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                color: white;
+                padding: 10px;
+            }
+
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+
+            }
+
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+
+            }
+
+            .mainContentItem {
+                text-align: left;
+                background: deepskyblue;
+            }
+
+            article {
+                padding: left;
+                margin: 10px;
+                background: aqua;
+            }
+
+            .sideBarLeftItem {background: gold;}
+            .sideBarRightItem {background: hotpink;}
+
+            .sideBarItem {flex: 1 0 0; border: 0px solid green;}
+            .mainContentItem {flex: 3 0px;}
+            .sideBarLeftItem {order: 1;}
+            .mainContentItem {order: 2;}
+            .sideBarRightItem {order: 3;}
+            
+
+
+        </style>
+     </head>
+     <body>
+        <header class="headerContainer"><h1>HEADER - sample Flexbox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First article</h2>
+
+                    <p>You can be infected by
+                         breathing in the virus if you are within close proximity of someone who has COVID-19, or by
+                    touching a contaminated surface and then your eyes, nose or mouth.</p>
+                </article>
+                <article>
+                    <h2>Second Article</h2>
+                    <p>Most people who fall sick with COVID-19 will experience mild 
+                    to moderate symptoms and recover without special treatment.The COVID-19 
+                    virus spreads primarily through droplets of saliva or discharge from the nose
+                     when an infected person coughs or sneezes, so it’s important that you also practice
+                      respiratory etiquette (for example, by coughing into a
+                    flexed elbow).</p>
+                </article>
+                <article>
+                    <h2>Third Article</h2>
+                    <p>The virus that causes COVID-19 is mainly transmitted through droplets generated 
+                        when an infected person coughs, sneezes,
+                    or exhales.</p>
+                    
+                </article>
+            </section>
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="centre"><p>Left side bar</p></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightItem"><div class="centre"><p>Right side bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+ </html>
